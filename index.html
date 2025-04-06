@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindEase AI - Your AI Mental Wellness Companion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Mind<span>Ease</span> AI</div>
+                <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+                <ul class="nav-links">
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#report">Sample Report</a></li>
+                    <li><a href="#" id="contact-link">Contact</a></li>
+                    <li><a href="#" id="login-btn">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Your AI Mental Wellness Companion</h1>
+            <p>Talk, reflect, and track your emotional well-being with our compassionate AI therapist available 24/7 through chat and voice.</p>
+            <div class="hero-buttons">
+                <a href="chat.html" class="btn btn-primary">Start Chatting Now</a>
+                <a href="#report" class="btn btn-secondary">View Sample Report</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="report" id="report">
+        <div class="container">
+            <div class="report-container">
+                <div class="report-header">
+                    <h2>Your Mental Wellness Report</h2>
+                    <p>Session Analysis Report</p>
+                    <a href="assets/sample-report.pdf" download class="btn btn-primary">
+                        Download PDF Report
+                    </a>
+                </div>
+                
+                <div class="report-section">
+                    <h3>Session Summary</h3>
+                    <p>During this session, you discussed feelings of work-related stress and occasional sleep difficulties. The conversation focused on deadlines, time management, and maintaining work-life balance.</p>
+                </div>
+                
+                <div class="report-section">
+                    <h3>Mood Analysis</h3>
+                    <p>Overall mood: Moderately Stressed (60% negative sentiment detected)</p>
+                    
+                    <div class="mood-chart">
+                        <div class="week-days">
+                            <div class="day">Mon</div>
+                            <div class="day">Tue</div>
+                            <div class="day">Wed</div>
+                            <div class="day">Thu</div>
+                            <div class="day">Fri</div>
+                            <div class="day">Sat</div>
+                            <div class="day">Sun</div>
+                        </div>
+                        <div class="mood-levels">
+                            <div class="mood-bar" style="height: 60%;" data-level="60%"></div>
+                            <div class="mood-bar" style="height: 50%;" data-level="50%"></div>
+                            <div class="mood-bar" style="height: 70%;" data-level="70%"></div>
+                            <div class="mood-bar" style="height: 65%;" data-level="65%"></div>
+                            <div class="mood-bar" style="height: 40%;" data-level="40%"></div>
+                            <div class="mood-bar" style="height: 30%;" data-level="30%"></div>
+                            <div class="mood-bar" style="height: 20%;" data-level="20%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="report-section">
+                    <h3>Key Concerns Identified</h3>
+                    <ul>
+                        <li>Work-related stress and pressure</li>
+                        <li>Difficulty maintaining work-life balance</li>
+                        <li>Occasional sleep disturbances</li>
+                        <li>Time management challenges</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Login to MindEase</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+            </form>
+            <p style="text-align: center; margin-top: 15px;">Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
+        </div>
+    </div>
+
+    <div class="modal" id="signup-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Create an Account</h2>
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="signup-name">Full Name</label>
+                    <input type="text" id="signup-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-confirm">Confirm Password</label>
+                    <input type="password" id="signup-confirm" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Sign Up</button>
+            </form>
+            <p style="text-align: center; margin-top: 15px;">Already have an account? <a href="#" id="show-login">Login</a></p>
+        </div>
+    </div>
+
+    <div class="modal" id="contact-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="contact-name">Name</label>
+                    <input type="text" id="contact-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Email</label>
+                    <input type="email" id="contact-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>MindEase AI</h3>
+                    <p>Your compassionate AI mental wellness companion, available 24/7 to support your emotional well-being.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#report">Sample Report</a></li>
+                        <li><a href="#" id="footer-contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>Email: support@mindease.ai</li>
+                        <li>Phone: (800) 555-1234</li>
+                        <li>Address: 123 Wellness St, San Francisco, CA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MindEase AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
